@@ -12,3 +12,10 @@
         width: 100%;
     }
 }
+
+.navAnimation(@fontSize, @initScale, @finalScale, @transTime) {
+    font-size: @fontSize;
+    transform: scale(@initScale);
+    transition: all @transTime;
+    &:hover { transform: scale(@finalScale); }
+}
